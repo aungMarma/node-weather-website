@@ -19,19 +19,3 @@ weatherForm.addEventListener('submit', (e) => {
 		});
 	});
 });
-
-// Use this function
-// fetchWeather(location, (data) => {
-//     console.log('Data', data);
-// });
-const fetchWeather = (location, callback) => {
-	fetch(`http://localhost:3000/weather?address=${location}`).then((response) => {
-		response.json().then((data) => {
-			if (data.error) {
-				callback({ error: data.error });
-			} else {
-				callback(data);
-			}
-		});
-	});
-};
