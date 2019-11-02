@@ -32,7 +32,9 @@ header a {
 	text-decoration: none;
 }
 .portrait {
-	width: 250px;
+	width: 560px;
+	height: 300px;
+	box-shadow: #333333;
 }
 input {
 	border: 1px solid #cccccc;
@@ -44,4 +46,13 @@ button {
 	background-color: #888888;
 	color: white;
 	padding: 8px;
+}
+p a {
+	text-decoration: none;
+	color: #888888;
+}
+small {
+	color: orangered;
+	font-size: 8px;
+	text-align: center;
 }
