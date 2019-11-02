@@ -70,7 +70,8 @@ app.get('/weather', (req, res) => {
 app.get('/help', (req, res) => {
 	res.render('help', {
 		title: 'Help Page',
-		name: 'Aung'
+		name: 'Aung',
+		helpMessage: 'Help is on the way!!'
 	});
 });
 
